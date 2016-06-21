@@ -1,0 +1,23 @@
+header {
+	text-align: center;
+}
+
+section {
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+}
+
+hr {
+	width: 19em;
+	align: center;
+}
+
+.result-box {
+	background-color: lightblue;
+	height: 18em;
+	width: 18em;
+	margin: 0 auto;
+}
