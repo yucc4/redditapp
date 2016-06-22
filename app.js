@@ -3,8 +3,9 @@
 $(function(){
 
 	$("button").click(function(){
+		var searchTerm = $("input").val();
 		$.getJSON(
-        "https://www.reddit.com/search.json?q=cats",
+        "https://www.reddit.com/search.json?q="+searchTerm+"",
         function foo(data)
         	{
           		$.each(
