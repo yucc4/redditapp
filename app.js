@@ -14,11 +14,16 @@ function makeCall() {
             $.each(
                 data.data.children.slice(0, 5),
                 function(i, post) {
+                	var post =
+                	"<div class = 'post-item'>"+
+                		"<a href='"+post.data.url+
+                			"' target='_blank'>"+post.data.title+
+                		"</a>"+
+                		"<img src='"+ post.data.thumbnail_url + "'>"
+                    	"<hr>"
+                    "</div>"
+
                     $(".result-box").append(post);
-                    $(".result-box").append("<a href='"+ post.data.url +
-                    "' target='_blank'>" + post.data.title + "</a>");
-                    $(".result-box").append('<br>' + post.data.permalink);
-                    $(".result-box").append('<hr>');
                 })
         }
     )
