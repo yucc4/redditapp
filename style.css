@@ -17,7 +17,8 @@ hr {
 
 .result-box {
 	background-color: lightblue;
-	height: 18em;
-	width: 18em;
+	height: 100%;
+	width: 60%;
 	margin: 0 auto;
+	overflow-y: scroll;
 }
